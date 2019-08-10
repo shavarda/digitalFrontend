@@ -1,0 +1,71 @@
+.form {
+    $colorPrimary: #FFFFFF;
+    $colorBackground: #F7F5F9;
+    $colorActive: #854FC8;
+
+    width: 401px;
+    height: 312px;
+    padding: 40px;
+    background-color: $colorBackground;
+    border-radius: 12px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.17);
+
+    &__title {
+        margin-bottom: 25px;
+        color: #3B3D43;
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+        margin-bottom: 28px;
+        box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+
+        &-elem {
+          height: 100%;
+          width: 100%;
+          font-size: 15px;
+          padding: 0 15px;
+          border: 1px solid $colorBackground;
+          border-radius: 6px;
+          font-family: $font-family;
+
+          &::placeholder {
+            color: #D0C9D6;
+          }
+
+          &:hover,
+          &:focus {
+            background-color: $colorPrimary;
+            border: 1px solid $colorActive;
+            outline: none;
+          }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        height: 48px;
+        color: $colorPrimary;
+        background-color: #6979F8;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: $font-family;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover,
+        &:focus {
+            background-color: $colorActive;
+            outline: none;
+            transition: 0.5s;
+        }
+    }
+}

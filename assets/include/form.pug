@@ -1,0 +1,31 @@
+form.form
+    .form__title.
+        Задать вопрос
+
+    .form__input
+        input#name.form__input-elem(
+            name='name'
+            type='text'
+            placeholder='Фамилия Имя Отчество *'
+            pattern='^[А-Яа-яЁё-\\s]+$'
+            required
+        )
+
+    .form__input
+        input#phone.form__input-elem(
+            name='phone'
+            type='text'
+            placeholder='Телефон *'
+            pattern='^[0-9-+\\s]+$'
+            required
+        )
+
+    .form__input
+        input#email.form__input-elem(
+            name='email'
+            type='email'
+            placeholder='Email'
+        )
+
+    button.form__btn(type='submit').
+        Отправить запрос
