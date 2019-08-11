@@ -7,8 +7,6 @@ form.form
             name='name'
             type='text'
             placeholder='Фамилия Имя Отчество *'
-            pattern='^[А-Яа-яЁё-\\s]+$'
-            required
         )
 
     .form__input
@@ -16,14 +14,12 @@ form.form
             name='phone'
             type='text'
             placeholder='Телефон *'
-            pattern='^[0-9-+\\s]+$'
-            required
         )
 
     .form__input
         input#email.form__input-elem(
             name='email'
-            type='email'
+            type='text'
             placeholder='Email'
         )
 
