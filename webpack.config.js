@@ -11,16 +11,16 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname),
-    filename: './js/bundle.js'
+    filename: './bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin([
-      './js',
-      './css',
+      './bundle.js',
+      './style.css',
       './fonts',
       './*.html'
     ]),
-    new ExtractTextPlugin('./css/style.css'),
+    new ExtractTextPlugin('./style.css'),
     new HtmlWebpackPlugin({
       template: './assets/index.pug'
     }),
